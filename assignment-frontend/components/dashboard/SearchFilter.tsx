@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { TaskFilters } from "../../../types";
+import { Task, TaskFilters, ApiResponse, TaskStatsType } from "@/types";
+
 
 interface SearchFilterProps {
   filters: TaskFilters;
