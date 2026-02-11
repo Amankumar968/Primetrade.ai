@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../../context/AuthContext";
-import { ApiResponse, Task, TaskFilters } from "../../../types";
+import { ApiResponse, Task, TaskFilters, TaskStatsType } from "../../../types";
 import api from "../../../lib/api";
 import { Button } from "../../../components/ui/Button";
 import { Modal } from "../../../components/ui/Modal";
