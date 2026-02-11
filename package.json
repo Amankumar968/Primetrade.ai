@@ -1,0 +1,8 @@
+{
+  "name": "prime-trade",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix assignment-frontend run build"
+  }
+}

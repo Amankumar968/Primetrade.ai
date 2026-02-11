@@ -8,9 +8,15 @@ dotenv.config();
 
 const app = express();
 
+// CORS configuration to support both local dev and deployed frontend
+const allowedOrigins = [
+  'http://localhost:3000',
+  'http://127.0.0.1:3000',
+  process.env.FRONTEND_URL, // e.g. https://primetrade-ai-one.vercel.app
+].filter(Boolean);
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://127.0.0.1:3000'],
+  origin: allowedOrigins,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
